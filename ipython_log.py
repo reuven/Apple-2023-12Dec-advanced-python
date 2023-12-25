@@ -342,3 +342,4 @@ def myfunc():
     yield 2
     yield 3
     
+myfunc()
