@@ -46,3 +46,5 @@ print(m.x)
 
 
     
+with MyCM(10) as m:
+    print('Inside')
