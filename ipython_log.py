@@ -359,3 +359,4 @@ def fib():
     while True:
         yield first
         first, second = second, first+second
+g = fib()    # create a generator for Fibonacci numbers
