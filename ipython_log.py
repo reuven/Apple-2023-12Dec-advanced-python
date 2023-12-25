@@ -207,3 +207,7 @@ c = Circle('abcd', 5)
 
 i1 = iter(c)
 i2 = iter(c)
+next(i1)
+next(i1)
+next(i1)
+next(i2)
