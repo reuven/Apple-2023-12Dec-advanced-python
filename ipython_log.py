@@ -330,3 +330,7 @@ list(o)
   for one_item in o]
 {one_item
   for one_item in o}
+def myfunc():
+    return 1
+    return 2
+    return 3
