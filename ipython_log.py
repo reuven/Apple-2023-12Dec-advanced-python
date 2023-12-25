@@ -365,3 +365,4 @@ for one_item in g:
         break
 
     print(one_item, end=' ')
+dir(g)
