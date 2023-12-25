@@ -211,3 +211,25 @@ next(i1)
 next(i1)
 next(i1)
 next(i2)
+class OnlyVowels:
+    def __init__(self, data):
+        self.data = data
+        self.index = 0
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self.index >= len(self.data):
+            raise StopIteration
+
+        value = self.data[self.index]
+        self.index += 1
+        if value in 'aeiou':
+            return value
+        return self.__next__()
+
+o = OnlyVowels('this is a test')
+for one_item in o:
+    print(one_item)
+            
