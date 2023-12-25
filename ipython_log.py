@@ -111,3 +111,4 @@ m = MyIterator('abcd')
 for one_item in m:
     print(one_item)
         
+len(m)
