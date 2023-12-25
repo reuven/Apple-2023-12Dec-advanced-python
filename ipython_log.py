@@ -203,3 +203,7 @@ for one_item in c:
 print('** second time **')
 for one_item in c:
     print(one_item)
+c = Circle('abcd', 5)
+
+i1 = iter(c)
+i2 = iter(c)
