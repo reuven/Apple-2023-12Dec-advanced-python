@@ -78,3 +78,4 @@ for one_character in s:
     print(one_character)
 iter(s)
 iter([10, 20, 30])
+iter(5)
