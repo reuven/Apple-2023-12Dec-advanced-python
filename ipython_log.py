@@ -325,3 +325,4 @@ for one_item in o:
 print('** second time **')
 for one_item in o:
     print(one_item)
+list(o)
