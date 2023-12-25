@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class MyDescriptor:
     def __init__(self):
         print(f'In MyDescriptor.__init__')
