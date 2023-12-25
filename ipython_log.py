@@ -152,3 +152,13 @@ class Circle:
 c = Circle('abcd', 5)
 for one_item in c:
     print(one_item)   
+s = 'abcd'
+
+print('** first time **')
+for one_item in s:
+    print(one_item)
+
+print('** second time **')
+for one_item in s:
+    print(one_item)
+    
