@@ -72,3 +72,7 @@ print(m.x)
     
 with MyCM(10) as m:
     print('Inside')
+s = 'abcd'
+
+for one_character in s:
+    print(one_character)
