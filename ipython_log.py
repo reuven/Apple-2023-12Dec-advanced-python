@@ -345,3 +345,4 @@ def myfunc():
 myfunc()
 # I get a generator object back! 
 myfunc()
+g = myfunc()
