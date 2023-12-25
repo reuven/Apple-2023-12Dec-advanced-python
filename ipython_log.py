@@ -335,3 +335,4 @@ def myfunc():
     return 2
     return 3
 myfunc()
+import dis
