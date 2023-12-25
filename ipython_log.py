@@ -48,3 +48,27 @@ print(m.x)
     
 with MyCM(10) as m:
     print('Inside')
+# context manager
+
+class MyCM:
+    def __init__(self, x):
+        print(f'In MyCM.__init__, {x=}')
+        self.x = x
+
+    def __enter__(self):
+        print(f'In MyCM.__enter__')
+        return self
+
+    def __exit__(self, *args):
+        print(f'In MyCM.__exit__, {args=}')
+        return True
+
+m = MyCM(10)
+print(m.x)
+
+
+
+
+    
+with MyCM(10) as m:
+    print('Inside')
