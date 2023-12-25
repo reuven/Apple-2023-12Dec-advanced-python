@@ -367,3 +367,4 @@ for one_item in g:
     print(one_item, end=' ')
 dir(g)
 dir(g.gi_frame)
+g.gi_frame.f_locals
