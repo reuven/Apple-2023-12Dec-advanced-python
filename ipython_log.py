@@ -19,3 +19,8 @@ m = MyClass()
 print(m.x)
 print(m.x * 2)
 gc.get_referrers(MyDescriptor)
+del(m)
+del(MyClass)
+del(MyDescriptor)
+import gc
+gc.get_referrers(MyDescriptor)
