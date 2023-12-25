@@ -334,3 +334,4 @@ def myfunc():
     return 1
     return 2
     return 3
+myfunc()
