@@ -336,3 +336,4 @@ def myfunc():
     return 3
 myfunc()
 import dis
+dis.dis(myfunc)
