@@ -326,3 +326,7 @@ print('** second time **')
 for one_item in o:
     print(one_item)
 list(o)
+[one_item
+  for one_item in o]
+{one_item
+  for one_item in o}
