@@ -86,3 +86,28 @@ next(i)
 next(i)
 next(i)
 next(i)
+class MyIterator:
+    def __init__(self, data):
+        print(f'\tIn __init__, {data=}')
+        self.data = data
+        self.index = 0
+
+    def __iter__(self):
+        print(f'\tIn __iter__, {vars(self)=}')
+        return self
+
+    def __next__(self):
+        print(f'\tIn __next__, {vars(self)=}')
+        if self.index >= len(self.data):
+            print(f'\t\tRaising StopIteration')
+            raise StopIteration
+
+        value = self.data[self.index]
+        self.index += 1
+        print(f'\t\tReturning {value=}')
+        return value
+
+m = MyIterator('abcd')
+for one_item in m:
+    print(one_item)
+        
