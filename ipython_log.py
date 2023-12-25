@@ -343,3 +343,5 @@ def myfunc():
     yield 3
     
 myfunc()
+# I get a generator object back! 
+myfunc()
