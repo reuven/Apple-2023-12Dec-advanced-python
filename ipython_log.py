@@ -79,3 +79,9 @@ for one_character in s:
 iter(s)
 iter([10, 20, 30])
 iter(5)
+i = iter(s)
+
+next(i)
+next(i)
+next(i)
+next(i)
