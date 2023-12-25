@@ -352,3 +352,10 @@ next(g)
 next(g)
 # generator functions have "yield" in there somewhere
 # running a generator function returns a generator object
+def fib():
+    first = 0
+    second = 1
+
+    while True:
+        yield first
+        first, second = second, first+second
