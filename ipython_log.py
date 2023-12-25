@@ -360,3 +360,8 @@ def fib():
         yield first
         first, second = second, first+second
 g = fib()    # create a generator for Fibonacci numbers
+for one_item in g:
+    if one_item > 100_000_000:
+        break
+
+    print(one_item, end=' ')
