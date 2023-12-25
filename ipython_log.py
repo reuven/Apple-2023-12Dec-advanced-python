@@ -370,3 +370,4 @@ dir(g.gi_frame)
 g.gi_frame.f_locals
 g.gi_frame.f_lineno
 next(g)
+g.gi_frame.f_locals
