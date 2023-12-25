@@ -337,3 +337,8 @@ def myfunc():
 myfunc()
 import dis
 dis.dis(myfunc)
+def myfunc():
+    yield 1
+    yield 2
+    yield 3
+    
