@@ -132,3 +132,23 @@ class Circle:
 c = Circle('abcd', 9)
 for one_item in c:
     print(one_item)   
+class Circle:
+    def __init__(self, data, maxtimes):
+        self.data = data
+        self.maxtimes = maxtimes
+        self.index = 0
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self.index >= self.maxtimes:
+            raise StopIteration
+
+        value = self.data[self.index % len(self.data)]
+        self.index += 1
+        return value
+
+c = Circle('abcd', 5)
+for one_item in c:
+    print(one_item)   
