@@ -262,3 +262,32 @@ o = OnlyVowels('this is a test')
 for one_item in o:
     print(one_item)
             
+# two-class version
+
+class OnlyVowelsIterator:
+    def __init__(self, ov):
+        self.only_vowels = ov
+        self.index = 0
+
+    def __next__(self):
+        if self.index >= len(self.only_vowels.data):
+            raise StopIteration
+
+        value = self.only_vowels.data[self.index]
+        self.index += 1
+        if value in 'aeiou':
+            return value
+        return self.__next__()
+
+class OnlyVowels:
+    def __init__(self, data):
+        self.data = data
+
+    def __iter__(self):
+        return OnlyVowelsIterator(self)
+
+
+o = OnlyVowels('this is a test')
+for one_item in o:
+    print(one_item)
+            
