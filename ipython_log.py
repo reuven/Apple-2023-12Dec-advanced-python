@@ -350,3 +350,5 @@ next(g)
 next(g)
 next(g)
 next(g)
+# generator functions have "yield" in there somewhere
+# running a generator function returns a generator object
