@@ -15,3 +15,12 @@ class MyClass:
 m = MyClass()
 print(m.x)
 print(m.x * 2)
+
+
+print('About to delete m')
+del(m)
+print('About to delete MyClass')
+del(MyClass)
+print('About to delete MyDescriptor')
+del(MyDescriptor)
+print('About to exit program')
