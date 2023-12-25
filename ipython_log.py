@@ -346,3 +346,7 @@ myfunc()
 # I get a generator object back! 
 myfunc()
 g = myfunc()
+next(g)
+next(g)
+next(g)
+next(g)
