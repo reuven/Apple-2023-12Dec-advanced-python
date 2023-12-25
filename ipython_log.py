@@ -162,3 +162,12 @@ print('** second time **')
 for one_item in s:
     print(one_item)
     
+c = Circle('abcd', 5)
+
+print('** first time **')
+for one_item in c:
+    print(one_item)
+
+print('** second time **')
+for one_item in c:
+    print(one_item)
