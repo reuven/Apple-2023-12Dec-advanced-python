@@ -48,3 +48,5 @@ next(g1)
 next(g1)
 
 next(g1)
+g1.gi_frame.f_lineno
+g2.gi_frame.f_lineno
