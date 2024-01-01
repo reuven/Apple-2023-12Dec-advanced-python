@@ -15,8 +15,9 @@ def count_vowels(filename):
             for one_character in one_line:
                 if one_character in output:
                     counts[one_character] += 1
-
-    q.put((filename, counts))
+        q.put((filename, counts))
+    except as e:
+        print(f'\tError opening{filename}')
 
 for one_filename in glob.glob('/etc/*.conf'):
     t = threading.Thread(target=count_vowels, args=(one_filename,))
