@@ -14,7 +14,7 @@ for i in range(10):
 
 # "join" on a thread means: wait until it's done
 while threading.active_count() > 1:
-    time.sleep(0.0001)
+    pass
     # print(f'\t{threading.active_count()}')
     # for one_thread in threading.enumerate():
     #     if one_thread != threading.current_thread():
