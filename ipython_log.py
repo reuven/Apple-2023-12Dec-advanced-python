@@ -149,3 +149,7 @@ print(next(g))
 g = (   print(one_item)
     for one_item in mylist    )
 list(g)
+numbers = {x*x
+ for x in range(-10, 10)}
+print(numbers)
+numbers
