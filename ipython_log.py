@@ -62,3 +62,19 @@ def read_n(filename, n):
 
 for one_chunk in read_n('/etc/passwd', 5):
     print(one_chunk)
+# let's take n into account
+
+def read_n(filename, n):
+    with open(filename) as f:
+        while True:
+            output_lines = []
+            
+            for i in range(n):
+                output_lines.append(f.readline())
+
+            output = ''.join(output_lines)
+                
+            if output:
+                yield output
+            else:
+                return
