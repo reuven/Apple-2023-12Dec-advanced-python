@@ -140,3 +140,5 @@ mylist = [10, 20, 30]
             for one_item in mylist    )
 '*'.join(   print(one_item)
             for one_item in mylist    )
+(   print(one_item)
+    for one_item in mylist    )
