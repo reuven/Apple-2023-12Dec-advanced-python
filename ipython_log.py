@@ -30,3 +30,4 @@ bin(myfunc.__code__.co_flags)
 bin(mygen.__code__.co_flags)
 import dis
 dis.show_code(myfunc)
+dis.show_code(mygen)
