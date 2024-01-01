@@ -25,3 +25,5 @@ type(myfunc)
 type(mygen)
 myfunc.__code__.co_consts
 myfunc.__code__.co_flags
+hex(myfunc.__code__.co_flags)
+bin(myfunc.__code__.co_flags)
