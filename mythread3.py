@@ -22,3 +22,6 @@ while threading.active_count() > 1:
             one_thread.join(0.0001)  # timeout is 0.0001 sec
 
 print('Done!')
+
+while not q.empty():
+    print(q.get())
