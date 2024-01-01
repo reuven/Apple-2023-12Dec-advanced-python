@@ -174,3 +174,21 @@ filename = '/etc/passwd'
   for one_line in open(filename)
   for one_character in one_line 
   if one_character in 'aeiou')
+filename = '/etc/passwd' 
+
+g = ( one_character
+  for one_line in open(filename)
+  for one_character in one_line 
+  if one_character in 'aeiou')
+
+for one_item in g:
+     print(one_item)  
+filename = '/etc/passwd' 
+
+g = ( one_character
+  for one_line in open(filename)
+  for one_character in one_line 
+  if one_character in 'aeiou')
+
+for one_item in g:
+     print(one_item, end=' ')  
