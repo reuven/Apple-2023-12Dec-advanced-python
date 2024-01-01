@@ -31,3 +31,8 @@ bin(mygen.__code__.co_flags)
 import dis
 dis.show_code(myfunc)
 dis.show_code(mygen)
+def myfunc():
+    return 1
+    return 2
+    return 3
+dis.dis(myfunc)
