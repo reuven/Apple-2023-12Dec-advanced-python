@@ -3,8 +3,9 @@
 import threading
 import time
 import random
+from queue import Queue
 
-q = threading.queue()
+q = Queue()
 
 def hello(n):
     time.sleep(random.randint(0, 3))
@@ -16,7 +17,6 @@ for i in range(10):
 
 # "join" on a thread means: wait until it's done
 while threading.active_count() > 1:
-    print(f'\t{threading.active_count()}')
     for one_thread in threading.enumerate():
         if one_thread != threading.current_thread():
             one_thread.join(0.0001)  # timeout is 0.0001 sec
