@@ -16,3 +16,7 @@ for one_item in evenrange(10, 20):
     print(one_item)
 def myfunc():
     return f'Hello, world!'
+def mygen():
+    yield f'Hello, world!'
+muyfunc()
+myfunc()
