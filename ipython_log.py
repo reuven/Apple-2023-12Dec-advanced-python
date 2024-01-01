@@ -95,3 +95,7 @@ def read_n(filename, n):
 
 for one_chunk in read_n('/etc/passwd', 7):
     print(one_chunk)
+# list comprehension
+
+[x*x
+ for x in range(-10, 10)]
