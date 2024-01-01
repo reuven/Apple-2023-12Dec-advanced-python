@@ -13,7 +13,7 @@ def count_vowels(filename):
     try:
         for one_line in open(filename):
             for one_character in one_line:
-                if one_character in output:
+                if one_character in counts:
                     counts[one_character] += 1
         q.put((filename, counts))
     except Exception as e:
