@@ -162,3 +162,9 @@ filename = '/etc/passwd'
 [ one_character
   for one_line in open(filename)
   for one_character in one_line ]
+filename = '/etc/passwd' 
+
+[ one_character
+  for one_line in open(filename)
+  for one_character in one_line 
+  if one_character in 'aeiou']
