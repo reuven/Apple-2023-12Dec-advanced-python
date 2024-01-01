@@ -157,3 +157,8 @@ d = {}
 d['a'] = 100    
 hash('a')
 hash('a') % 8
+filename = '/etc/passwd' 
+
+[ one_character
+  for one_line in open(filename)
+  for one_character in one_line ]
