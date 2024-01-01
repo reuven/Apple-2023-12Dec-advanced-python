@@ -155,3 +155,5 @@ print(numbers)
 numbers
 d = {}
 d['a'] = 100    
+hash('a')
+hash('a') % 8
