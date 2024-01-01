@@ -1,0 +1,8 @@
+# # Exercise: File vowels
+
+# 1. Define a function, `count_vowels`, that takes a filename as an input. It uses `q.put` to return a tuple with two elements:
+#     - the filename
+#     - a dictionary with keys a, e, i, o, and u as an output. The values will be integers, the number of times each vowel appears in a file.
+# 3. Use threads to start this function once per file in a directory (or a list of files that you provide). You can use `os.listdir` or `glob.glob`.
+# 4. When all of the threads are done, go through the queue and print all of the filenames and the reports they've made.
+# 5. If a file doesn't work (binary, no permission, etc.), then just ignore it.
