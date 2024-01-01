@@ -15,5 +15,7 @@ def count_vowels(filename):
         print(f'\tError opening{filename}: {e}')
 
 with ThreadPoolExecutor as executor:
+    all_results = []
     for one_filename in glob.glob('/etc/*.conf'):
         one_result = executor.submit(count_vowels, one_filename)
+        all_results.append(one_result)
