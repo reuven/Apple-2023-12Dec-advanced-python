@@ -21,3 +21,4 @@ with ThreadPoolExecutor as executor:
         all_results.append(one_result)
 
     print(all_results)
+    
