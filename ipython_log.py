@@ -14,3 +14,5 @@ def evenrange(start, finish):
         yield one_number
 for one_item in evenrange(10, 20):
     print(one_item)
+def myfunc():
+    return f'Hello, world!'
