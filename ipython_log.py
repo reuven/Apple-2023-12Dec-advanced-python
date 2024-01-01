@@ -120,3 +120,5 @@ for one_chunk in read_n('/etc/passwd', 7):
 g = (x*x
  for x in range(-10, 10))
 g
+for one_item in g:
+    print(one_item)
