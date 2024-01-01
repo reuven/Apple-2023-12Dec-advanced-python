@@ -30,4 +30,6 @@ while threading.active_count() > 1:
 print('Done!')
 
 while not q.empty():
+    filename, 
+
     print(q.get())
