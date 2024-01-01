@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+
+
+
 # # Exercise: File vowels
 
 # 1. Define a function, `count_vowels`, that takes a filename as an input. It uses `q.put` to return a tuple with two elements:
