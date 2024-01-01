@@ -8,8 +8,8 @@ from queue import Queue
 q = Queue()
 
 def hello(n):
-    time.sleep(random.randint(0, 3))
     q.put(f'{n} Hello!')
+    time.sleep(random.randint(0, 3))
     q.put(f'{n} Goodbye!')
 
 for i in range(10):
