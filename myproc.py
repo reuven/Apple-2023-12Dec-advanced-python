@@ -15,13 +15,15 @@ def count_vowels(filename):
     except Exception as e:
         print(f'\tError opening{filename}: {e}')
 
-with ProcessPoolExecutor(max_workers=10) as executor:
-    all_results = []
-    for one_filename in glob.glob('/etc/*.conf'):
-        one_result = executor.submit(count_vowels, one_filename)
-        all_results.append(one_result)
+if __name__ == '__main__':
 
-    done, not_done = wait(all_results, return_when=FIRST_COMPLETED)
+    with ProcessPoolExecutor(max_workers=10) as executor:
+        all_results = []
+        for one_filename in glob.glob('/etc/*.conf'):
+            one_result = executor.submit(count_vowels, one_filename)
+            all_results.append(one_result)
 
-    for one_result in done:
-        print(one_result.result())
+        done, not_done = wait(all_results, return_when=FIRST_COMPLETED)
+
+        for one_result in done:
+            print(one_result.result())
