@@ -144,3 +144,5 @@ mylist = [10, 20, 30]
     for one_item in mylist    )
 g = (   print(one_item)
     for one_item in mylist    )
+next(g)
+print(next(g))
