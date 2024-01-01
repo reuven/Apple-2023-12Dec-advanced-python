@@ -16,4 +16,4 @@ def count_vowels(filename):
 
 with ThreadPoolExecutor as executor:
     for one_filename in glob.glob('/etc/*.conf'):
-        one_result =
+        one_result = executor.submit(count_vowels, one_filename)
