@@ -7,3 +7,8 @@ def myfunc(x, y):
 myfunc(10, 20)
 for one_item in myfunc(10, 20):
     print(one_item)
+def evenrange(start, finish):
+    for one_number in range(start, finish):
+        if one_number % 2:
+            continue
+        yield one_number
