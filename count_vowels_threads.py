@@ -35,4 +35,4 @@ while not q.empty():
     filename, d = q.get()
     print(filename)
     for key, value in d.items():
-        print(f'{key}: {value}')
+        print(f'\t{key}: {value}')
