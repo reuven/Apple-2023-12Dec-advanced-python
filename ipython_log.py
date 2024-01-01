@@ -125,3 +125,7 @@ for one_item in g:
 mylist = [10, 20, 30]
 
 '*'.join(mylist)   # this won't work -- only can pass a list of strings
+# we can use a list comprehension here
+
+'*'.join([str(one_item)
+          for one_item in mylist])
