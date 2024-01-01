@@ -30,4 +30,9 @@ while threading.active_count() > 1:
 print('Done!')
 
 while not q.empty():
+    filename, d = q.get()
+    print(filename)
+    for key, value in d.items():
+        print(f'{key}: {value}')
+
     print(q.get())
