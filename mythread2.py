@@ -15,7 +15,7 @@ for i in range(10):
     t.start()
 
 # "join" on a thread means: wait until it's done
-for one_thread in all_threads:
+for one_thread in threading.enumerate():
     one_thread.join()
 
 print('Done!')
