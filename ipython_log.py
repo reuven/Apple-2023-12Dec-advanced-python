@@ -192,3 +192,12 @@ g = ( one_character
 
 for one_item in g:
      print(one_item, end=' ')  
+filename = '/etc/passwd' 
+
+g = ( one_character
+  for one_line in open(filename)
+  for one_character in one_line 
+  if one_character.lower() in 'aeiou')
+
+for one_item in g:
+     print(one_item, end=' ')  
