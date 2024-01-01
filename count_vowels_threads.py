@@ -2,6 +2,7 @@
 
 import threading
 from queue import Queue
+import glob
 
 q = Queue()
 
@@ -15,6 +16,15 @@ def count_vowels(filename):
                 counts[one_character] += 1
 
     q.put((filename, counts))
+
+for one_filename in glob.glob('/etc/*.conf'):
+    t = threading.Thread(target=count_vowels, args=(one_filename,))
+    t.start()
+
+while threading.active_count() > 1:
+    for one_thread in threading.enumerate():
+        if one_thread != threading.current_thread():
+            one_thread.join(0.0001)  # timeout is 0.0001 sec
 
 
 
