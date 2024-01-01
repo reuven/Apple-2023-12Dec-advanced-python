@@ -6,7 +6,7 @@ from queue import Queue
 q = Queue()
 
 def count_vowels(filename):
-    # output = {'a':0, 'e':0, 'i':0, 'o':0, 'u':0}
+    # counts = {'a':0, 'e':0, 'i':0, 'o':0, 'u':0}
     counts = dict.fromkeys('aeiou', 0)
 
     for one_line in open(filename):
