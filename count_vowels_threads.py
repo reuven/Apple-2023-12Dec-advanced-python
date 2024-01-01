@@ -34,5 +34,3 @@ while not q.empty():
     print(filename)
     for key, value in d.items():
         print(f'{key}: {value}')
-
-    print(q.get())
