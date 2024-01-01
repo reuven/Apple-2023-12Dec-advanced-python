@@ -133,3 +133,8 @@ mylist = [10, 20, 30]
 
 '*'.join((str(one_item)
           for one_item in mylist))
+# what about this:
+# we can remove the inner parentheses and it works fine!
+
+'*'.join(   str(one_item)
+            for one_item in mylist    )
