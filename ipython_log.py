@@ -4,3 +4,4 @@
 def myfunc(x, y):
     for one_number in range(x, y):
         yield one_number
+myfunc(10, 20)
