@@ -3,8 +3,9 @@
 import threading
 import time
 import random
+from queue import Queue
 
-q = threading.ueue()
+q = queue()
 
 def hello(n):
     time.sleep(random.randint(0, 3))

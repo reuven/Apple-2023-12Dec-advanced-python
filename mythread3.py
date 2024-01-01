@@ -4,7 +4,7 @@ import threading
 import time
 import random
 
-q = threading.Queue()
+q = threading.queue()
 
 def hello(n):
     time.sleep(random.randint(0, 3))
