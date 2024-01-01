@@ -36,3 +36,7 @@ def myfunc():
     return 2
     return 3
 dis.dis(myfunc)
+def myfunc():
+    if False:
+        yield 'Hello'
+    
