@@ -12,3 +12,5 @@ def evenrange(start, finish):
         if one_number % 2:
             continue
         yield one_number
+for one_item in evenrange(10, 20):
+    print(one_item)
