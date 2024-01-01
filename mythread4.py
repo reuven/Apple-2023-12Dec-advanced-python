@@ -10,6 +10,6 @@ def count_vowels(filename):
             for one_character in one_line:
                 if one_character in counts:
                     counts[one_character] += 1
-        q.put((filename, counts))
+        return filename, counts
     except Exception as e:
         print(f'\tError opening{filename}: {e}')
