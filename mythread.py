@@ -13,6 +13,7 @@ for i in range(10):
     t = threading.Thread(target=hello, args=(i,))
     all_threads.append(t)
     t.start()
+    t.join()
 
 # "join" on a thread means: wait until it's done
 for one_thread in all_threads:
