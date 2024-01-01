@@ -153,3 +153,5 @@ numbers = {x*x
  for x in range(-10, 10)}
 print(numbers)
 numbers
+d = {}
+d['a'] = 100    
