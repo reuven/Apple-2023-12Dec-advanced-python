@@ -20,3 +20,5 @@ def mygen():
     yield f'Hello, world!'
 muyfunc()
 myfunc()
+mygen()
+type(myfunc)
