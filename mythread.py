@@ -2,8 +2,8 @@
 
 import threading
 
-def hello():
-    print(f'Hello!')
+def hello(n):
+    print(f'{n} Hello!')
 
 for i in range(10):
     t = threading.Thread(target=hello)
