@@ -78,3 +78,5 @@ def read_n(filename, n):
                 yield output
             else:
                 return
+for one_chunk in read_n('/etc/passwd', 5):
+    print(one_chunk)
