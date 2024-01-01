@@ -23,3 +23,4 @@ myfunc()
 mygen()
 type(myfunc)
 type(mygen)
+myfunc.__code__.co_consts
