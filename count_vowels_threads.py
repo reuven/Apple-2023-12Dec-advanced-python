@@ -10,10 +10,11 @@ def count_vowels(filename):
     # counts = {'a':0, 'e':0, 'i':0, 'o':0, 'u':0}
     counts = dict.fromkeys('aeiou', 0)
 
-    for one_line in open(filename):
-        for one_character in one_line:
-            if one_character in output:
-                counts[one_character] += 1
+    try:
+        for one_line in open(filename):
+            for one_character in one_line:
+                if one_character in output:
+                    counts[one_character] += 1
 
     q.put((filename, counts))
 
