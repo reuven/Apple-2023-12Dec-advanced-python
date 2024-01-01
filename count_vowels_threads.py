@@ -21,6 +21,7 @@ for one_filename in glob.glob('/etc/*.conf'):
     t = threading.Thread(target=count_vowels, args=(one_filename,))
     t.start()
 
+# wait for the threads to finish
 while threading.active_count() > 1:
     for one_thread in threading.enumerate():
         if one_thread != threading.current_thread():
