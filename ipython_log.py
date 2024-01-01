@@ -45,3 +45,6 @@ g1 = evenrange(10, 20)
 g2 = evenrange(10, 20)
 g3 = evenrange(10, 20)
 next(g1)
+next(g1)
+
+next(g1)
