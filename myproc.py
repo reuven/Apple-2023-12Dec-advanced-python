@@ -15,8 +15,6 @@ def count_vowels(filename):
     except Exception as e:
         print(f'\tError opening{filename}: {e}')
 
-if __name__ == '__main__':
-
     with ProcessPoolExecutor(max_workers=10) as executor:
         all_results = []
         for one_filename in glob.glob('/etc/*.conf'):
