@@ -21,7 +21,7 @@ with ThreadPoolExecutor(max_workers=10) as executor:
         one_result = executor.submit(count_vowels, one_filename)
         all_results.append(one_result)
 
-    done, not_done = wait(all_results)
+    done, not_done = wait(all_results, return_when=FIRST_COMPLETED)
 
     for one_result in done:
         print(one_result.result())
