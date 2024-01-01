@@ -6,7 +6,8 @@ from queue import Queue
 q = Queue()
 
 def count_vowels(filename):
-    output 
+    output = {'a':0, 'e':0, 'i':0, 'o':0, 'u':0}
+    
 
 
 # # Exercise: File vowels
