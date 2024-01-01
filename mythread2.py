@@ -17,6 +17,6 @@ while threading.active_count() > 1:
     print(f'\t{threading.active_count()}')
     for one_thread in threading.enumerate():
         if one_thread != threading.current_thread():
-            one_thread.join(0.1)
+            one_thread.join(0.1)  # timeout is 0.1 sec
 
 print('Done!')
