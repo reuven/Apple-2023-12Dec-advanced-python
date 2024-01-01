@@ -8,7 +8,7 @@ q = threading.Queue()
 
 def hello(n):
     time.sleep(random.randint(0, 3))
-    print(f'{n} Hello!')
+    q.put(f'{n} Hello!')
 
 for i in range(10):
     t = threading.Thread(target=hello, args=(i,))
