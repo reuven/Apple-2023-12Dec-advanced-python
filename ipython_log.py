@@ -41,3 +41,6 @@ def myfunc():
         yield 'Hello'
     
 dis.show_code(myfunc)
+g1 = evenrange(10, 20)
+g2 = evenrange(10, 20)
+g3 = evenrange(10, 20)
