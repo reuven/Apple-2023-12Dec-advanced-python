@@ -40,3 +40,4 @@ def myfunc():
     if False:
         yield 'Hello'
     
+dis.show_code(myfunc)
