@@ -122,3 +122,6 @@ g = (x*x
 g
 for one_item in g:
     print(one_item)
+mylist = [10, 20, 30]
+
+'*'.join(mylist)   # this won't work -- only can pass a list of strings
