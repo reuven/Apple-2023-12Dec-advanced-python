@@ -28,3 +28,4 @@ myfunc.__code__.co_flags
 hex(myfunc.__code__.co_flags)
 bin(myfunc.__code__.co_flags)
 bin(mygen.__code__.co_flags)
+import dis
