@@ -115,3 +115,8 @@ for one_chunk in read_n('/etc/passwd', 7):
 
 (x*x
  for x in range(-10, 10))
+# generator expression / generator comprehension
+
+g = (x*x
+ for x in range(-10, 10))
+g
