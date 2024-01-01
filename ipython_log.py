@@ -50,3 +50,13 @@ next(g1)
 next(g1)
 g1.gi_frame.f_lineno
 g2.gi_frame.f_lineno
+def read_n(filename, n):
+    with open(filename) as f:
+        while True:
+            output = f.readline()
+    
+            if output:
+                yield output
+            else:
+                return
+
