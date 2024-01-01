@@ -9,9 +9,10 @@ q = Queue()
 l = threading.Lock()
 
 def hello(n):
-    q.put(f'{n} Hello!')
-    time.sleep(random.randint(0, 3))
-    q.put(f'{n} Goodbye!')
+    with l:                     # 
+        q.put(f'{n} Hello!')
+        time.sleep(random.randint(0, 3))
+        q.put(f'{n} Goodbye!')
 
 for i in range(10):
     t = threading.Thread(target=hello, args=(i,))
