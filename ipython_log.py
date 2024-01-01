@@ -129,3 +129,7 @@ mylist = [10, 20, 30]
 
 '*'.join([str(one_item)
           for one_item in mylist])
+# we can also use a generator comprehension
+
+'*'.join((str(one_item)
+          for one_item in mylist))
