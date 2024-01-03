@@ -105,3 +105,8 @@ a.size
 a
 # what happens when I add a to itself?
 a + a
+a1 = np.array([10, 20, 30, 40, 50])
+a2 = np.array([100, 200, 300, 400, 500])
+a3 = np.array([25, 50, 75])
+
+a1 + a3
