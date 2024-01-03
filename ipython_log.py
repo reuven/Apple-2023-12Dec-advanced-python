@@ -135,3 +135,5 @@ max_temps - min_temps.mean()
 (max_temps - min_temps).mean()
 min_temps * (9/5) + 32
 max_temps * (9/5) + 32
+(max_temps * (9/5) + 32) - (min_temps * (9/5) + 32) 
+((max_temps * (9/5) + 32) - (min_temps * (9/5) + 32)).mean()
