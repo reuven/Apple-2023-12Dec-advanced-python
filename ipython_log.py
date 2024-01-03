@@ -174,3 +174,8 @@ min_temps[min_temps < 12]
 # find the max temp on days when the min temp is < 12
 
 max_temps[min_temps < 12]
+# what if I want two conditions together, using "and" or "or"?
+
+# for example: I want all of the minimum temps that are (a) < 12 and (b) odd
+
+min_temps[min_temps < 12 and min_temps % 2 == 1]
