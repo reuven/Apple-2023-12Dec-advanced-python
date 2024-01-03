@@ -259,3 +259,6 @@ a
 # I want to change a to be 16 bits
 
 a.dtype = np.dtype('int16')
+a = np.array([10, 20, 30, 40, 50])
+a.dtype = np.dtype('float64')
+a
