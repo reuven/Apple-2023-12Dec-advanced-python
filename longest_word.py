@@ -20,5 +20,5 @@ with ThreadPoolExecutor() as executor:
     results = executor.map(longest_word,
                            glob.glob('/etc/*.conf'))
 
-    for one_result in results:
-        print(one_result)
+    for filename, one_result in results:
+        print(f'{filename}: {one_result.strip()}')
