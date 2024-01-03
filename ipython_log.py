@@ -184,3 +184,9 @@ min_temps[min_temps < 12 and min_temps % 2 == 1]
 # for example: I want all of the minimum temps that are (a) < 12 and (b) odd
 
 min_temps[min_temps < 12 & min_temps % 2 == 1]
+# what if I want two conditions together, using "and" or "or"?
+
+# for example: I want all of the minimum temps that are (a) < 12 and (b) odd
+
+min_temps[(min_temps < 12) & 
+          (min_temps % 2 == 1)]
