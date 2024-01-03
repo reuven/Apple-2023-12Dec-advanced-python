@@ -8,7 +8,7 @@ async def hello(n):
 
 async def main():
     for i in range(5):
-        hello(i)
+        await hello(i)
 
 # run the async def, and get a coroutine back
 # schedule the coroutine with asyncio.run
