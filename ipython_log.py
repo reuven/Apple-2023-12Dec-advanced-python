@@ -226,3 +226,5 @@ a % 2
 a[a % 2 == 1].mean()
 # what numbers are bigger than the mean?
 a > a.mean()
+# what numbers are bigger than the mean?
+a[a > a.mean()]
