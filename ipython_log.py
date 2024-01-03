@@ -123,3 +123,4 @@ a.__pow__(3)
 min_temps = np.array([13, 12, 12, 11, 11, 11, 10, 12, 10, 8])
 max_temps = np.array([19, 20, 18, 22, 24, 22, 19, 18, 16, 15])
 max_temps.mean()
+max_temps[:3]
