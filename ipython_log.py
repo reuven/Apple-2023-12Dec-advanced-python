@@ -143,3 +143,5 @@ a
 a = np.array([10, 20, 30, 40, 50])
 a
 a[[2, 4]]
+# what happens if I do this?
+a[ [True, False, False, True, True] ]
