@@ -228,3 +228,5 @@ a[a % 2 == 1].mean()
 a > a.mean()
 # what numbers are bigger than the mean?
 a[a > a.mean()]
+# what even numbers are bigger than the mean?
+a[((a > a.mean()) & (a % 2 == 0))]
