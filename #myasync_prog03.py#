@@ -9,8 +9,13 @@ async def hello(n):
     print(f'{n} Goodbye!')
 
 async def main():
+    # create the tasks, but don't yet schedule/run them
     tasks = [asyncio.create_task(hello(i))
-             for i 
+             for i in range(5)]
+
+    
+    # ask the event loop to
+    asyncio.gather(*tasks)
 
 
 # run the async def, and get a coroutine back
