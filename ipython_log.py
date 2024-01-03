@@ -152,3 +152,10 @@ a == 30
 # I can use this comparison + mask indexes to filter
 
 a[a < 30]
+# I can use this comparison + mask indexes to filter
+
+# 1. First, we execute a<30, and we get back a boolean array
+# 2. Then we use the resulting boolean array as a mask/boolean index on a
+# 3. We get back a new array, based on a, where the condition was True
+
+a[a < 30]
