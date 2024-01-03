@@ -103,3 +103,5 @@ a.mean()
 a.std()
 a.size
 a
+# what happens when I add a to itself?
+a + a
