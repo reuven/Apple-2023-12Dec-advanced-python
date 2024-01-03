@@ -66,3 +66,8 @@ print(*map(count_vowels, words))
 import time
 time.time()
 import numpy as np
+# np.nparray is the data structure we want
+# but we'll build it with np.array, passing it a list
+
+a = np.array([10, 20, 30, 40, 50, 60])
+a
