@@ -224,3 +224,5 @@ a[a % 2]
 a % 2
 # mean of odd numbers
 a[a % 2 == 1].mean()
+# what numbers are bigger than the mean?
+a > a.mean()
