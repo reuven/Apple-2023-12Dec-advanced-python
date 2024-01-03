@@ -190,3 +190,13 @@ min_temps[min_temps < 12 & min_temps % 2 == 1]
 
 min_temps[(min_temps < 12) & 
           (min_temps % 2 == 1)]
+# what if I want two conditions together, using "and" or "or"?
+
+# for example: I want all of the minimum temps that are (a) < 12 and (b) odd
+
+# "and" in NumPy is &
+# "or" in NumPy is |
+# "not" in NumPy is ~
+
+min_temps[(min_temps < 12) & 
+          (min_temps % 2 == 1)]
