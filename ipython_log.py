@@ -63,3 +63,5 @@ words = 'this is a fantastic and enticing and superfabulous sentence'.split()
 list(map(count_vowels, words))
 print(map(count_vowels, words))
 print(*map(count_vowels, words))
+import time
+time.time()
