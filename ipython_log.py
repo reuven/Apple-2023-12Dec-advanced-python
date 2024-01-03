@@ -49,3 +49,15 @@ def count_vowels(s):
     return total
 
 list(map(count_vowels, words))
+def count_vowels(s):
+    total = 0
+
+    for one_character in s:
+        if one_character in 'aeiou':
+            total += 1
+
+    return total
+
+words = 'this is a fantastic and enticing and superfabulous sentence'.split()
+
+list(map(count_vowels, words))
