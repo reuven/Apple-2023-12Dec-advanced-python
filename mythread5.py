@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from concurrent.futures import ThreadPoolExecutor, wait
+from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor
 
 def count_vowels(s):
     total = 0
@@ -13,8 +13,11 @@ def count_vowels(s):
 
 words = 'this is a fantastic and enticing and superfabulous sentence'.split()
 
-with ThreadPoolExecutor() as executor:
+with ProcessPoolExecutor() as executor:
+    # executor.__enter__()
     results = executor.map(count_vowels, words)
 
     for one_result in results:
         print(one_result)
+
+    # executor.__exit__()
