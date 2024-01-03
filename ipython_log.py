@@ -145,3 +145,7 @@ a
 a[[2, 4]]
 # what happens if I do this?
 a[ [True, False, False, True, True] ]
+# broadcast with comparison operators
+
+a < 30
+a == 30
