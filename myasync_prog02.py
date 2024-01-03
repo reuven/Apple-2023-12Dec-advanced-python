@@ -5,6 +5,7 @@ import asyncio
 # define our function with "async def"
 async def hello(n):
     print(f'{n} Hello!')
+    print(f'{n} Goodbye!')
 
 async def main():
     for i in range(5):
