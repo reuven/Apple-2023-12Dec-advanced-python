@@ -23,5 +23,6 @@ with ThreadPoolExecutor() as executor:
                            glob.glob('/etc/*.conf'))
 
     end_time = time.time()
+    print(f'')
     for filename, one_result in results:
         print(f'{filename}: {one_result.strip()}')
