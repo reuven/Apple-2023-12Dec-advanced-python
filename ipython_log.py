@@ -99,3 +99,6 @@ a[  [3, 5, 2]  ]
 a.sum()
 a.min()
 a.max()
+a.mean()
+a.std()
+a.size
