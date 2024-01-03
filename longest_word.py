@@ -17,4 +17,8 @@ def longest_word(filename):
     return output
 
 with ThreadPoolExecutor() as executor:
-    results = executor.map(longest_word, glob.glob('/etc/*.conf'))
+    results = executor.map(longest_word,
+                           glob.glob('/etc/*.conf'))
+
+    for one_result in results:
+        print(one_result)
