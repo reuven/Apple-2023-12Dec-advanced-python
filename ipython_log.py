@@ -171,3 +171,6 @@ min_temps < 12
 # I want to see all min temperatures less than 12 degrees
 
 min_temps[min_temps < 12]
+# find the max temp on days when the min temp is < 12
+
+max_temps[min_temps < 12]
