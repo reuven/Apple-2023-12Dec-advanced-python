@@ -1,0 +1,11 @@
+/usr/local/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/reuven/Courses/Current/Apple-2023-advanced-python/console': [Errno 2] No such file or directory
+
+Process Python exited abnormally with code 2
+/usr/local/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/reuven/Courses/Current/Apple-2023-advanced-python/console': [Errno 2] No such file or directory
+
+Process Python exited abnormally with code 2
+print(f'{n} Hello!')
+
+
+Process Python exited abnormally with code 2
+print(f'{n} Hello!')
