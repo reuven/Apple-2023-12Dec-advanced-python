@@ -201,3 +201,4 @@ min_temps[(min_temps < 12) &
 min_temps[(min_temps < 12) & 
           (min_temps % 2 == 1)]
 min_temps < 12
+(min_temps < 12) * 5
