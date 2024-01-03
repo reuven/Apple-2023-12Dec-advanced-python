@@ -12,7 +12,7 @@ def longest_word(filename):
                 if len(one_word) > len(output):
                     output = one_word
     except Exception as e:
-        print(f'\tError reading from file {filename}')
+        return filename, f'[Error reading from file {filename}]'
 
     return filename, output
 
