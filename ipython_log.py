@@ -111,3 +111,6 @@ a3 = np.array([25, 50, 75])
 
 a1 + a3
 a1 / a2
+# broadcast
+
+a
