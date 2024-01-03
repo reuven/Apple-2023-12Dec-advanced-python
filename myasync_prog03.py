@@ -19,4 +19,4 @@ async def main():
 
 # run the async def, and get a coroutine back
 # schedule the coroutine with asyncio.run
-await main()
+asyncio.run(main())
