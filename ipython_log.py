@@ -238,3 +238,5 @@ a[a > a.mean() + a.std()]
 a[a > (a.mean() + a.std())]
 a.mean()
 a.std()
+a = np.array([10, 20, 30, 40, 50])
+a
