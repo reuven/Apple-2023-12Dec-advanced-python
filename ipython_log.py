@@ -94,3 +94,8 @@ np.random.seed(0)
 a = np.random.randint(0, 100, 10)
 a
 a[  [3, 5, 2]  ]
+# methods on our NumPy array
+
+a.sum()
+a.min()
+a.max()
