@@ -10,5 +10,7 @@ def longest_word(filename):
             for one_word in one_line.split():
                 if len(one_word) > output:
                     output = one_word
+    except Exception as e:
+        print(f'\tError reading from file {filename}')
 
     return output
