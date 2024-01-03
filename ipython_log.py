@@ -251,3 +251,6 @@ import sys
 sys.getsizeof(10) * 8
 a = np.array([10, 20, 30, 40, 50])
 a.dtype
+a = np.array([10, 20, 30, 40, 50], dtype=np.dtype('int8'))
+a.dtype
+a
