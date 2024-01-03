@@ -39,3 +39,13 @@ list(map(len, words))
 words = 'this is a bunch of words'.split()
 
 list(map(len, words))
+def count_vowels(s):
+    total = 0
+
+    for one_character in s:
+        if one_character in 'aeiou':
+            total += 1
+
+    return total
+
+list(map(count_vowels, words))
