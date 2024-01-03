@@ -245,3 +245,7 @@ a
 a = np.array([10, 20, 30, 40, 50])
 a.dtype
 64 * 5
+import sys
+sys.getsizeof(10)
+import sys
+sys.getsizeof(10) * 8
