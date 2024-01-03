@@ -221,3 +221,4 @@ a[a % 2 == 1]
 # odd numbers?
 
 a[a % 2]
+a % 2
