@@ -262,3 +262,6 @@ a.dtype = np.dtype('int16')
 a = np.array([10, 20, 30, 40, 50])
 a.dtype = np.dtype('float64')
 a
+a = np.array([10, 20, 30, 40, 50])
+a.dtype = np.dtype('int16')
+a
