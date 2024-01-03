@@ -9,8 +9,14 @@ async def hello(n):
     print(f'{n} Goodbye!')
 
 async def main():
-    for i in range(5):
-        await hello(i)
+    t1 = asyncio.create_task(hello(1))
+    t2 = asyncio.create_task(hello(2))
+    t3 = asyncio.create_task(hello(3))
+
+    await t1
+    await t2
+    await t3
+
 
 # run the async def, and get a coroutine back
 # schedule the coroutine with asyncio.run
