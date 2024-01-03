@@ -215,3 +215,6 @@ a = np.random.randint(0, 100, 20)
 a
 a % 2 == 0
 a[a % 2 == 0]
+# odd numbers
+
+a[a % 2 == 1]
