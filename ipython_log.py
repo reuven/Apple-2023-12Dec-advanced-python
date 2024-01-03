@@ -80,3 +80,7 @@ s[2:5]
 a[2:5]
 for one_item in a:
     print(one_item)
+# some other ways to create NumPy arrays
+
+a = np.random.randint(0, 100, 10)    # 10 ints from 0-100
+a
