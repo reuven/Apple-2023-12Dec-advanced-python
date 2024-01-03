@@ -140,3 +140,5 @@ max_temps * (9/5) + 32
 ((max_temps * (9/5) + 32) - 
  (min_temps * (9/5) + 32)).mean()
 a
+a = np.array([10, 20, 30, 40, 50])
+a
