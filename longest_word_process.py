@@ -20,7 +20,7 @@ def longest_word(filename):
 if __name__ == '__main__':
 
     start_time = time.time()
-    with ProcessPoolExecutor(max_workers=1) as executor:
+    with ProcessPoolExecutor(max_workers=10) as executor:
         results = executor.map(longest_word,
                                glob.glob('/etc/*.conf'))
 
