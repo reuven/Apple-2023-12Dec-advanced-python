@@ -213,3 +213,5 @@ min_temps
 np.random.seed(0)
 a = np.random.randint(0, 100, 20)
 a
+a % 2 == 0
+a[a % 2 == 0]
