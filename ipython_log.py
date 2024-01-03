@@ -93,3 +93,4 @@ a
 np.random.seed(0)   
 a = np.random.randint(0, 100, 10)
 a
+a[  [3, 5, 2]  ]
