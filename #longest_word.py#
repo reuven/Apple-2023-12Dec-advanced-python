@@ -23,6 +23,7 @@ with ThreadPoolExecutor() as executor:
                            glob.glob('/etc/*.conf'))
 
     end_time = time.time()
-    print(f'')
+    total_time = end_time - start_time
+    print(f'Total time: {total_)ti')
     for filename, one_result in results:
         print(f'{filename}: {one_result.strip()}')
