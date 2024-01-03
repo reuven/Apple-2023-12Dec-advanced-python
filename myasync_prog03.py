@@ -15,7 +15,7 @@ async def main():
 
 
     # ask the event loop to run all of these tasks
-    results = await asyncio.gather(*tasks)
+    results = asyncio.gather(*tasks)
 
 # run the async def, and get a coroutine back
 # schedule the coroutine with asyncio.run
