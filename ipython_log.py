@@ -233,3 +233,6 @@ a[((a > a.mean()) & (a % 2 == 0))]
 # what numbers are bigger than mean + std?
 
 a[a > a.mean() + a.std()]
+# what numbers are bigger than mean + std?
+
+a[a > (a.mean() + a.std())]
