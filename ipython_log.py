@@ -102,3 +102,4 @@ a.max()
 a.mean()
 a.std()
 a.size
+a
