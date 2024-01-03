@@ -88,3 +88,8 @@ a = np.random.rand(10)   # 10 floats from 0-1
 a
 a = np.arange(20)
 a
+# fancy indexing -- I can request multiple indexes
+
+np.random.seed(0)   
+a = np.random.randint(0, 100, 10)
+a
