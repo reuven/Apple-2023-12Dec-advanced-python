@@ -13,11 +13,13 @@ def count_vowels(s):
 
 words = 'this is a fantastic and enticing and superfabulous sentence'.split()
 
-with ProcessPoolExecutor() as executor:
-    # executor.__enter__()
-    results = executor.map(count_vowels, words)
+if __name__ == '__main__':
 
-    for one_result in results:
-        print(one_result)
+    with ProcessPoolExecutor() as executor:
+        # executor.__enter__()
+        results = executor.map(count_vowels, words)
 
-    # executor.__exit__()
+        for one_result in results:
+            print(one_result)
+
+        # executor.__exit__()
