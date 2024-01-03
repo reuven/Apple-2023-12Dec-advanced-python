@@ -256,3 +256,6 @@ a.dtype
 a
 a * 10
 a
+# I want to change a to be 16 bits
+
+a.dtype = np.dtype('int16')
