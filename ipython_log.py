@@ -114,3 +114,5 @@ a1 / a2
 # broadcast
 
 a
+a + a
+a + 3 
