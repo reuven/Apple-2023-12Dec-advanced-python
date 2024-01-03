@@ -126,3 +126,6 @@ max_temps.mean()
 max_temps[:3]
 max_temps[:3].mean()
 max_temps[range(3)].mean()
+# fancy indexing
+max_temps[range(3)].mean()
+max_temps[[0, 1, 2]].mean()
