@@ -149,3 +149,6 @@ a[ [True, False, False, True, True] ]
 
 a < 30
 a == 30
+# I can use this comparison + mask indexes to filter
+
+a[a < 30]
