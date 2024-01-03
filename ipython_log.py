@@ -270,3 +270,5 @@ a
 
 a = np.array([10, 20, 30, 40, 50])
 a.astype(np.float64)
+a = np.array([1000, 2000, 3000])
+a.astype(np.int8)
