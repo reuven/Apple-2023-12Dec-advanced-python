@@ -159,3 +159,9 @@ a[a < 30]
 # 3. We get back a new array, based on a, where the condition was True
 
 a[a < 30]
+# I want to see all min temperatures less than 20 degrees
+
+min_temps < 20
+# I want to see all min temperatures less than 15 degrees
+
+min_temps < 15
