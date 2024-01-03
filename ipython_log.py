@@ -265,3 +265,8 @@ a
 a = np.array([10, 20, 30, 40, 50])
 a.dtype = np.dtype('int16')
 a
+# how can we then change the type?
+# we run the "astype" method, specifying what we want
+
+a = np.array([10, 20, 30, 40, 50])
+a.astype(np.float64)
