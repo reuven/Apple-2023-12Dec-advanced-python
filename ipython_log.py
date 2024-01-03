@@ -168,3 +168,6 @@ min_temps < 15
 # I want to see all min temperatures less than 12 degrees
 
 min_temps < 12
+# I want to see all min temperatures less than 12 degrees
+
+min_temps[min_temps < 12]
