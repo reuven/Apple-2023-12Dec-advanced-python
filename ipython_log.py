@@ -218,3 +218,6 @@ a[a % 2 == 0]
 # odd numbers
 
 a[a % 2 == 1]
+# odd numbers?
+
+a[a % 2]
