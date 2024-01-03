@@ -21,3 +21,12 @@ numbers = range(10)
 words = 'this is a bunch of words'
 
 map(len, words)
+# how does map work?
+
+# we pass map two arguments:
+# 1. a function that takes one argument
+# 2. an iterable of data
+
+words = 'this is a bunch of words'
+
+list(map(len, words))
