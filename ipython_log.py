@@ -131,3 +131,4 @@ max_temps[range(3)].mean()
 max_temps[[0, 1, 2]].mean()
 max_temps - min_temps
 (max_temps - min_temps).mean()
+max_temps - min_temps.mean()
