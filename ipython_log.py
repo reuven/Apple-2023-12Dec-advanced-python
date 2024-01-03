@@ -211,3 +211,5 @@ min_temps
 (min_temps < 12) * (min_temps % 2 == 1)
 (min_temps < 12) + (min_temps % 2 == 1)
 np.random.seed(0)
+a = np.random.randint(0, 100, 20)
+a
