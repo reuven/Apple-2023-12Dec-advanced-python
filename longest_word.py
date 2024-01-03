@@ -14,7 +14,7 @@ def longest_word(filename):
     except Exception as e:
         print(f'\tError reading from file {filename}')
 
-    return output
+    return filename, output
 
 with ThreadPoolExecutor() as executor:
     results = executor.map(longest_word,
