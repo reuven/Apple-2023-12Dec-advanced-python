@@ -84,3 +84,5 @@ for one_item in a:
 
 a = np.random.randint(0, 100, 10)    # 10 ints from 0-100
 a
+a = np.random.rand(10)   # 10 floats from 0-1
+a
