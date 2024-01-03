@@ -17,13 +17,15 @@ def longest_word(filename):
 
     return filename, output
 
-start_time = time.time()
-with ProcessPoolExecutor(max_workers=1) as executor:
-    results = executor.map(longest_word,
-                           glob.glob('/etc/*.conf'))
+if __name__ == '__main__':
 
-    end_time = time.time()
-    total_time = end_time - start_time
-    print(f'Total time: {total_time}')
-    for filename, one_result in results:
-        print(f'{filename}: {one_result.strip()}')
+    start_time = time.time()
+    with ProcessPoolExecutor(max_workers=1) as executor:
+        results = executor.map(longest_word,
+                               glob.glob('/etc/*.conf'))
+
+        end_time = time.time()
+        total_time = end_time - start_time
+        print(f'Total time: {total_time}')
+        for filename, one_result in results:
+            print(f'{filename}: {one_result.strip()}')
