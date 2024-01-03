@@ -16,4 +16,5 @@ words = 'this is a fantastic and enticing and superfabulous sentence'.split()
 with ThreadPoolExecutor() as executor:
     results = executor.map(count_vowels, words)
 
-    print(results)
+    for one_result in results:
+        print(one_result)
