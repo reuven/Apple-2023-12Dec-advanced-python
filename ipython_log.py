@@ -236,3 +236,5 @@ a[a > a.mean() + a.std()]
 # what numbers are bigger than mean + std?
 
 a[a > (a.mean() + a.std())]
+a.mean()
+a.std()
