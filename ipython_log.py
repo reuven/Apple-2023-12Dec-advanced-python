@@ -222,3 +222,5 @@ a[a % 2 == 1]
 
 a[a % 2]
 a % 2
+# mean of odd numbers
+a[a % 2 == 1].mean()
