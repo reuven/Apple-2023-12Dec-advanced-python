@@ -78,3 +78,5 @@ a[1]
 a[-1]
 s[2:5]
 a[2:5]
+for one_item in a:
+    print(one_item)
